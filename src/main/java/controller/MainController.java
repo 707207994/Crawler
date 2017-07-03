@@ -15,4 +15,10 @@ public class MainController {
     public String welcome() {
         return "hello world main controller";
     }
+
+    @RequestMapping("/index")
+    @ResponseBody
+    public String index() {
+        return "hello world main index";
+    }
 }
