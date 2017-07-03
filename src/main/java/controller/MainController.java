@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+
 @Controller
 @RequestMapping(value = "/")
 public class MainController {
@@ -15,4 +16,3 @@ public class MainController {
         return "hello world main controller";
     }
 }
-
