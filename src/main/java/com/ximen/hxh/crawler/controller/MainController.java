@@ -36,7 +36,7 @@ public class MainController {
     @RequestMapping("/testBatis")
     @ResponseBody
     public String index() throws IOException {
-        String resource = "conf.xml";
+        String resource = "/mybatis/conf.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession session = sqlSessionFactory.openSession();

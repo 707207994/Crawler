@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="userMapper">
     <!--根据ID获取对应的值  -->
-    <select id="findUserById" parameterType="int" resultType="String">
-        select name from user_nothing where id = #{id}
+    <select id="findUserById" parameterType="int" resultType="com.ximen.hxh.crawler.model.User">
+        select * from user_nothing where id = #{id}
     </select>
 </mapper>
